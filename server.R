@@ -15,17 +15,17 @@ library(RDS)
 library(packrat)
 library(randomForest)
 
-# load(file = "models/lr_model_opn.rda")
-# load(file = "models/lr_model_csn.rda")
-# load(file = "models/lr_model_ext.rda")
-# load(file = "models/lr_model_agr.rda")
-# load(file = "models/lr_model_neu.rda")
+load(file = "models/lr_model_opn.rda")
+load(file = "models/lr_model_csn.rda")
+load(file = "models/lr_model_ext.rda")
+load(file = "models/lr_model_agr.rda")
+load(file = "models/lr_model_neu.rda")
 
-lr_model_opn <- readRDS("lr_model_opn.rds")
-lr_model_csn <- readRDS("lr_model_csn.rds")
-lr_model_ext <- readRDS("lr_model_ext.rds")
-lr_model_agr <- readRDS("lr_model_agr.rds")
-lr_model_neu <- readRDS("lr_model_neu.rds")
+#lr_model_opn <- readRDS("lr_model_opn.rds")
+#lr_model_csn <- readRDS("lr_model_csn.rds")
+#lr_model_ext <- readRDS("lr_model_ext.rds")
+#lr_model_agr <- readRDS("lr_model_agr.rds")
+#lr_model_neu <- readRDS("lr_model_neu.rds")
 
 shinyServer(function(input, output, session) {
     
