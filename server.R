@@ -21,11 +21,11 @@ library(randomForest)
 #load(file = "lr_model_agr.rda")
 #load(file = "lr_model_neu.rda")
 
-lr_model_opn <- read_rds("lr_model_opn.rds")
-lr_model_csn <- read_rds("lr_model_csn.rds")
-lr_model_ext <- read_rds("lr_model_ext.rds")
-lr_model_agr <- read_rds("lr_model_agr.rds")
-lr_model_neu <- read_rds("lr_model_neu.rds")
+lr_model_opn <- read_rds(file = "lr_model_opn.rds")
+lr_model_csn <- read_rds(file = "lr_model_csn.rds")
+lr_model_ext <- read_rds(file = "lr_model_ext.rds")
+lr_model_agr <- read_rds(file = "lr_model_agr.rds")
+lr_model_neu <- read_rds(file = "lr_model_neu.rds")
 
 shinyServer(function(input, output, session) {
     
