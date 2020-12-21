@@ -13,6 +13,7 @@ library(splitstackshape)
 library(tidyverse)
 library(RDS)
 library(packrat)
+library(randomForest)
 
 load(file = "lr_model_opn.rda")
 load(file = "lr_model_csn.rda")
