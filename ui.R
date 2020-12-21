@@ -24,7 +24,7 @@ fluidPage(theme = shinytheme("flatly"),
                               $(document).on('shiny:connected', function(event) {
                               socket_timeout_interval = setInterval(function(){
                               Shiny.onInputChange('count', n++)
-                              }, 1500)
+                              }, 20000)
                               });
                               $(document).on('shiny:disconnected', function(event) {
                               clearInterval(socket_timeout_interval)
